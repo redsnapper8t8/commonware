@@ -1,0 +1,1 @@
+Search.setIndex({objects:{},terms:{own:0,modul:1,share:0,indic:1,packag:0,want:0,tabl:1,seem:0,index:1,welcom:1,content:1,also:0,too:0,commonwar:[0,1],document:1,worth:0,them:0,thei:0,tool:0,here:0,search:1,django:0,collect:0,small:0,page:1},objtypes:{},titles:["Commonware","Welcome to Commonware&#8217;s documentation!"],objnames:{},filenames:["README","index"]})
