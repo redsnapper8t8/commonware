@@ -26,10 +26,9 @@ class SetRemoteAddrFromForwardedFor(object):
 
         #cloudflare
         if "HTTP_CF_CONNECTING_IP" in request.META:
-            xff = request.META['HTTP_CF_CONNECTING_IP'].strip()
+            xff = [i.strip() for i in
+                   request.META['HTTP_CF_CONNECTING_IP'].split(',')]
             ips = [ip for ip in xff if is_valid(ip)]
-
-
         #not cloudflare
         elif 'HTTP_X_FORWARDED_FOR' in request.META:
             xff = [i.strip() for i in
